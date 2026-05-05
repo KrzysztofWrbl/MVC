@@ -22,7 +22,7 @@ build_property.RootNamespace = MvcMovie
 build_property.ProjectDir = C:\Users\krzys\Documents\MVC\Dotnet\MvcMovie\MvcMovie\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.RazorLangVersion = 9.0
+build_property.RazorLangVersion = 10.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\krzys\Documents\MVC\Dotnet\MvcMovie\MvcMovie
@@ -88,6 +88,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/krzys/Documents/MVC/Dotnet/MvcMovie/MvcMovie/Views/Movies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krzys/Documents/MVC/Dotnet/MvcMovie/MvcMovie/Views/Movie/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krzys/Documents/MVC/Dotnet/MvcMovie/MvcMovie/Views/Movie/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krzys/Documents/MVC/Dotnet/MvcMovie/MvcMovie/Views/Movie/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krzys/Documents/MVC/Dotnet/MvcMovie/MvcMovie/Views/Movie/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krzys/Documents/MVC/Dotnet/MvcMovie/MvcMovie/Views/Movie/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/krzys/Documents/MVC/Dotnet/MvcMovie/MvcMovie/Views/Shared/Error.cshtml]
