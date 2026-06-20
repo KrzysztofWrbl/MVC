@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGO_URI)
     });
 
 app.get('/', (req, res) => {
-    res.render('index');
+    res.redirect('/events');
 });
 
 app.use('/events', eventRoutes);
