@@ -68,6 +68,8 @@
             <thead>
                 <tr>
                     <th>Nazwa wydarzenia</th>
+                    <th>Lokalizacja</th>
+                    <th>Pogoda</th>
                     <th>Data</th>
                     <th>Liczba miejsc</th>
                     <th>Akcje</th>
@@ -75,9 +77,22 @@
             </thead>
 
             <tbody>
+
                 <% events.forEach(event => { %>
+
                     <tr>
-                        <td><%= event.nazwaWydarzenia %></td>
+
+                        <td>
+                            <%= event.nazwaWydarzenia %>
+                        </td>
+
+                        <td>
+                            <%= event.lokalizacja %>
+                        </td>
+
+                        <td>
+                            <%= event.pogoda %>
+                        </td>
 
                         <td>
                             <%= new Date(event.data).toLocaleDateString('pl-PL') %>
@@ -88,33 +103,67 @@
                         </td>
 
                         <td>
+
                             <% if (event.liczbaMiejsc > 0) { %>
-                                <form action="/events/<%= event._id %>/reserve" method="POST" class="d-inline">
-                                    <button type="submit" class="btn btn-success btn-sm">
+
+                                <form
+                                    action="/events/<%= event._id %>/reserve"
+                                    method="POST"
+                                    class="d-inline"
+                                >
+                                    <button
+                                        type="submit"
+                                        class="btn btn-success btn-sm"
+                                    >
                                         Rezerwuj
                                     </button>
                                 </form>
+
                             <% } else { %>
-                                <button class="btn btn-secondary btn-sm" disabled>
+
+                                <button
+                                    class="btn btn-secondary btn-sm"
+                                    disabled
+                                >
                                     Brak miejsc
                                 </button>
+
                             <% } %>
 
-                            <form action="/events/<%= event._id %>/edit" method="GET" class="d-inline">
-                                <button type="submit" class="btn btn-warning btn-sm">
+                            <form
+                                action="/events/<%= event._id %>/edit"
+                                method="GET"
+                                class="d-inline"
+                            >
+                                <button
+                                    type="submit"
+                                    class="btn btn-warning btn-sm"
+                                >
                                     Edytuj
                                 </button>
                             </form>
 
-                            <form action="/events/<%= event._id %>/delete" method="POST" class="d-inline">
-                                <button type="submit" class="btn btn-danger btn-sm">
+                            <form
+                                action="/events/<%= event._id %>/delete"
+                                method="POST"
+                                class="d-inline"
+                            >
+                                <button
+                                    type="submit"
+                                    class="btn btn-danger btn-sm"
+                                >
                                     Usuń
                                 </button>
                             </form>
+
                         </td>
+
                     </tr>
+
                 <% }) %>
+
             </tbody>
+
         </table>
 
     <% } %>

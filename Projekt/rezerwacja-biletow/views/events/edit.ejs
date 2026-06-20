@@ -23,6 +23,11 @@
             </div>
 
             <div class="mb-3">
+                <label>Lokalizacja:</label>
+                <input type="text" name="lokalizacja" class="form-control" value="<%= event.lokalizacja %>" required minlength="2">
+            </div>
+
+            <div class="mb-3">
                 <label>Data:</label>
                 <input type="date" name="data" class="form-control" value="<%= event.data.toISOString().split('T')[0] %>" required>
             </div>

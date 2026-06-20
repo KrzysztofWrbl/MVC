@@ -12,6 +12,10 @@ const eventSchema = new mongoose.Schema({
     liczbaMiejsc: {
         type: Number,
         required: true
+    },
+        lokalizacja: {
+        type: String,
+        required: true
     }
 });
 
